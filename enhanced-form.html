@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment: Enhancing HTML5</title>
+</head>
+<body>
+  <header>
+    <h1>Assignment: Enhancing HTML5 Content & Mastering Forms </h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Lists</h2>
+      <h3>Ordered List/ Learning Path</h3>
+      <ol>
+        <li>Software Engineering Essentials</li>
+        <li>Web Development V2</li>
+        <li>Python</li>
+        <li>Database Design and Programming with SQL</li>
+        <li>Startup Building for Developers</li>
+      </ol>
+
+      <h3>Unordered List/ Popular Languages</h3>
+      <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Java</li>
+      </ul>
+
+      <h3>Definition List/ Programming languages and what they do</h3>
+      <dl>
+        <dt>Python</dt>
+        <dd>A high-level programming language known for its readability and versatility.</dd>
+        <dt>JavaScript</dt>
+        <dd>A programming language commonly used for creating interactive effects within web browsers.</dd> 
+        <dt>SQL</dt>
+        <dd>Structured Query Language – a standard language for managing and manipulating databases.</dd>   
+        <dt>Java</dt>
+        <dd>A high-level, class-based, object-oriented programming language designed to have as few</dd>
+      </dl>
+
+      <h3>Nested Lists</h3>
+      <ol>
+        <li>Frontend Languages
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </li>
+        <li>Backend Languages
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Media</h2>
+
+      <h3>Image</h3>
+      <img src="https://images.pexels.com/photos/5700184/pexels-photo-5700184.jpeg" 
+           alt="Focused Black man working on a laptop in a bright, minimalist room with natural light." 
+           width="500" height="300" />
+
+      <h3>Video</h3>
+      <video width="500" height="300" controls>
+        <source src="https://videos.pexels.com/video-files/6330772/6330772-hd_1920_1080_30fps.mp4" type="video/mp4" />
+        Your browser does not support video playback.
+      </video>
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="" type="audio/mpeg" />
+        Your browser does not support audio playback.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Table/ Language Comparison</h2>
+      <table border="1">
+        <caption>Programming Language Overview</caption>
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Use</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>Backend</td>
+            <td>Data Science, AI, Web Development</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Frontend</td>
+            <td>Web Interactivity</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Backend</td>
+            <td>Enterprise Applications</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Form</h2>
+      <form action="/submit" method="post">
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name..." required/>
+          <br/>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email..." required autocomplete="email"/>
+          <br/>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" placeholder="Enter your age..." required min="18" max="80"/>
+          <br/>
+
+          <label for="birth">Date of Birth:</label>
+          <input type="date" id="birth" name="birth" required/>
+          <br/>
+
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="Male" required/>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female"/>
+          <label for="female">Female</label>
+          <br/>
+
+          <label for="language">Favorite Language:</label>
+          <input type="text" id="language" name="language" placeholder="e.g. Python" required/>
+          <br/>
+
+          <label for="cv">Upload CV:</label>
+          <input type="file" id="cv" name="cv" required accept=".pdf,.doc,.docx"/>
+          <br/>
+
+          <label for="bio">Bio:</label>
+          <textarea id="bio" name="bio" rows="5" placeholder="Write your bio..." required minlength="20"></textarea>
+          <br/>
+          <input type="submit" value="submit"/>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+</body>
+</html>
